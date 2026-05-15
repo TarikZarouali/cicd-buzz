@@ -28,7 +28,7 @@ jobs:
 
     - name: Test with pytest
       run: |
-        pytest tests/ -v
+        PYTHONPATH=. pytest tests/ -v
 
   deploy:
     needs: build
